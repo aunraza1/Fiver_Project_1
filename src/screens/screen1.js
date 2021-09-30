@@ -11,7 +11,7 @@ from 'react-native'
 import styles from './styles'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import {faTrashAlt,faCopy} from '@fortawesome/free-regular-svg-icons'
-import {faChevronLeft,faLock,faExclamationTriangle,faChevronDown,faSearch} from '@fortawesome/free-solid-svg-icons'
+import {faChevronLeft,faLock,faExclamationTriangle,faChevronDown,faSearch,faSortAmountUpAlt} from '@fortawesome/free-solid-svg-icons'
 function Screen1(){
     return(
       <ScrollView style={styles.container}>
@@ -68,7 +68,7 @@ function Screen1(){
                   <FontAwesomeIcon style={{marginTop:2,marginRight:5}} icon={faExclamationTriangle} color="#EB5757"/>
                   <Text style={{fontFamily:"Manrope-Bold",fontSize:16,lineHeight:22}}> Suspicious Activily Detected</Text>
               </View>
-                <Text style={{fontFamily:"Inter-Thin",fontSize:15,lineHeight:24}}>Beneficiary may be involved in suspicious activity.</Text>
+                <Text style={{fontFamily:"Inter-Thin Bold",fontSize:15,lineHeight:24}}>Beneficiary may be involved in suspicious activity.</Text>
 
           </View>
           <View style={{flexDirection:'row',marginTop:20}}>
@@ -87,11 +87,11 @@ function Screen1(){
       
         </TouchableOpacity>
                   </View>
-                  <View style={{justifyContent:'flex-end'}}>
+                  <View style={{justifyContent:'flex-end',marginRight:5}}>
              
              <TouchableOpacity  style={{height:33.6,width:33.6,borderRadius:33.6/2,backgroundColor:'#E9EDF4',justifyContent:'center'}}>
         
-        <FontAwesomeIcon style={{alignSelf:'center',}} size={15} icon={faTrashAlt}/>
+        <FontAwesomeIcon style={{alignSelf:'center',}} size={15} icon={faSortAmountUpAlt}/>
      
        </TouchableOpacity>
                  </View>
@@ -111,9 +111,9 @@ function Screen1(){
                   <FontAwesomeIcon size={13} style={{marginTop:4,marginLeft:5}} icon={faExclamationTriangle} color="#EB5757"/>
 
                   </View>
-                   <View style={{alignItems:'flex-start'}}>
-                  <Text style={{fontFamily:"Inter-Thin",fontSize:14,lineHeight:24}} >1 days ago <Text style={{color: '#2362FB',fontSize:14,lineHeight:24,fontFamily:"Inter-Thin Bold"}}> 0xc1912f...JSA59aE31 </Text> <TouchableOpacity>
-                    <FontAwesomeIcon size={10} icon ={faCopy}/>
+                   <View style={{justifyContent:'flex-start',alignItems:'flex-start'}}>
+                  <Text style={{fontFamily:"Inter-Thin",fontSize:14,lineHeight:24}} >1 days ago. <Text style={{color: '#2362FB',fontSize:14,lineHeight:24,fontFamily:"Inter-Thin Bold"}}> 0xc1912f...JSA59aE31 </Text> <TouchableOpacity>
+                    <FontAwesomeIcon size={20} icon ={faCopy}/>
                   </TouchableOpacity>
                      
                   </Text>
@@ -122,10 +122,79 @@ function Screen1(){
                   
                 </View>
                 <View style={{justifyContent:'flex-end'}}>
-                    <Text style={{marginBottom:8}}>$3.5</Text>
+                    <Text style={{marginBottom:8,fontFamily:'Manrope-Bold',fontSize:16,lineHeight:22}}>$3.5</Text>
                  </View>   
                 </View>
+                <View style={{flexDirection:'row',marginTop:20}}>
+              <View style={{justifyContent:'flex-start',flex:1}}>
+                   <View style={{flexDirection:'row'}}>
+                  <Text style={{fontFamily:'Manrope-Bold',fontSize:16,lineHeight:22}}>Received</Text>
+                 
 
+                  </View>
+                   <View style={{justifyContent:'flex-start',alignItems:'flex-start'}}>
+                  <Text style={{fontFamily:"Inter-Thin",fontSize:14,lineHeight:24}} >4 days ago. <Text style={{color: '#2362FB',fontSize:14,lineHeight:24,fontFamily:"Inter-Thin Bold"}}> 0xc1912f...JSA59aE31 </Text> <TouchableOpacity>
+                    <FontAwesomeIcon size={20} icon ={faCopy}/>
+                  </TouchableOpacity>
+                     
+                  </Text>
+                  </View>
+                  
+                  
+                </View>
+                <View style={{justifyContent:'flex-end'}}>
+                    <Text style={{marginBottom:8,fontFamily:'Manrope-Bold',fontSize:16,lineHeight:22}}>$2</Text>
+                 </View>   
+                </View>
+                <View style={{flexDirection:'row',marginTop:20}}>
+              <View style={{justifyContent:'flex-start',flex:1}}>
+                   <View style={{flexDirection:'row'}}>
+                  <Text style={{fontFamily:'Manrope-Bold',fontSize:16,lineHeight:22}}>Claimed</Text>
+                 
+
+                  </View>
+                   <View style={{justifyContent:'flex-start',alignItems:'flex-start'}}>
+                  <Text style={{fontFamily:"Inter-Thin",fontSize:14,lineHeight:24}} >3 day ago.</Text>
+                  </View>
+                  
+                  
+                </View>
+                <View style={{justifyContent:'flex-end'}}>
+                    <Text style={{marginBottom:8,fontFamily:'Manrope-Bold',fontSize:16,lineHeight:22}}>$0.5</Text>
+                 </View>   
+                </View>
+                <View style={{flexDirection:'row',marginTop:20}}>
+              <View style={{justifyContent:'flex-start',flex:1}}>
+                   <View style={{flexDirection:'row'}}>
+                  <Text style={{fontFamily:'Manrope-Bold',fontSize:16,lineHeight:22}}>Claimed</Text>
+                 
+
+                  </View>
+                   <View style={{justifyContent:'flex-start',alignItems:'flex-start'}}>
+                  <Text style={{fontFamily:"Inter-Thin",fontSize:14,lineHeight:24}} >3 day ago.</Text>
+                  </View>
+                  
+                  
+                </View>
+                <View style={{justifyContent:'flex-end'}}>
+                    <Text style={{marginBottom:8,fontFamily:'Manrope-Bold',fontSize:16,lineHeight:22}}>$0.5</Text>
+                 </View>   
+                </View>
+                <View style={{flexDirection:'row',marginTop:20}}>
+              <View style={{justifyContent:'flex-start',flex:1}}>
+                   <View style={{flexDirection:'row'}}>
+                  <Text style={{fontFamily:'Manrope-Bold',fontSize:16,lineHeight:22}}>Joined Community</Text>
+                 
+
+                  </View>
+                   <View style={{justifyContent:'flex-start',alignItems:'flex-start'}}>
+                  <Text style={{fontFamily:"Inter-Thin",fontSize:14,lineHeight:24}} >6 days ago. Added by Afonso Barbosa</Text>
+                  </View>
+                  
+                  
+                </View>
+                 
+                </View>
           
 
       </ScrollView>
