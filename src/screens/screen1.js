@@ -44,7 +44,7 @@ function Screen1() {
         <View style={styles.topIconLeft}>
           <Text style={styles.textStyle1}>Cameron Williamson</Text>
           <View style={{ alignItems: 'flex-start', justifyContent: 'center' }}>
-            <Text style={styles.textStyle2} >$25 Claimed <Text style={{ color: '#2362FB', fontSize: 14, lineHeight: 24, fontFamily: "Inter-Thin Bold" }}> 0xc1912f...JSA59aE31 </Text>
+            <Text style={styles.textStyle2} >$25 Claimed <Text style={{ color: '#2362FB', fontSize: 14, lineHeight: 24, fontFamily: "Inter-Regular" }}> 0xc1912f...JSA59aE31 </Text>
               <TouchableOpacity>
                 <FontAwesomeIcon size={20} icon={faCopy} />
               </TouchableOpacity>
@@ -63,7 +63,7 @@ function Screen1() {
         </View>
       </View>
       <View style={styles.boxContainer}>
-        <View style={styles.row}>
+        <View style={[styles.row, { padding: 5 }]}>
           <FontAwesomeIcon style={{ marginTop: 2, marginRight: 5 }} icon={faExclamationTriangle} color="#EB5757" />
           <Text style={styles.textStyle1}> Suspicious Activily Detected</Text>
         </View>
@@ -103,7 +103,7 @@ function Screen1() {
           </TouchableOpacity>
         </View>
       </View>
-      <View style={{ padding: 8 }}>
+      <View style={{paddingBottom:20}}>
         <View style={styles.subContainer}>
           <View style={styles.topIconLeft}>
             <View style={styles.row}>
@@ -112,7 +112,7 @@ function Screen1() {
 
             </View>
             <View style={{ justifyContent: 'flex-start', alignItems: 'flex-start' }}>
-              <Text style={styles.textStyle2} >1 days ago. <Text style={{ color: '#2362FB', fontSize: 14, lineHeight: 24, fontFamily: "Inter-Thin Bold" }}> 0xc1912f...JSA59aE31 </Text> <TouchableOpacity>
+              <Text style={styles.textStyle2} >1 days ago. <Text style={{ color: '#2362FB', fontSize: 14, lineHeight: 24, fontFamily: "Inter-Regular" }}> 0xc1912f...JSA59aE31 </Text> <TouchableOpacity>
                 <FontAwesomeIcon size={20} icon={faCopy} />
               </TouchableOpacity>
 
@@ -126,11 +126,9 @@ function Screen1() {
           </View>
         </View>
         <View style={styles.subContainer}>
-          <View style={[styles.container, { padding: 0 }]}>
+          <View style={{flexGrow:1}}>
             <View style={styles.row}>
               <Text style={styles.textStyle1}>Received</Text>
-
-
             </View>
             <View style={{ justifyContent: 'flex-start', alignItems: 'flex-start' }}>
               <Text style={styles.textStyle2} >4 days ago. <Text style={styles.textStyle3}> 0xc1912f...JSA59aE31 </Text> <TouchableOpacity>
@@ -147,14 +145,14 @@ function Screen1() {
           </View>
         </View>
         <View style={styles.subContainer}>
-          <View style={[styles.container, { padding: 0 }]}>
+          <View style={{flexGrow:1}}>
             <View style={styles.row}>
               <Text style={styles.textStyle1}>Claimed</Text>
 
 
             </View>
             <View style={{ justifyContent: 'flex-start', alignItems: 'flex-start' }}>
-              <Text style={styles.textStyle2} >3 day ago.</Text>
+              <Text style={styles.textStyle2} >2 days ago.</Text>
             </View>
 
 
@@ -180,6 +178,24 @@ function Screen1() {
             <Text style={styles.textStyle1}>$0.5</Text>
           </View>
         </View>
+        <View style={styles.subContainer}>
+          <View style={styles.topIconLeft}>
+            <View style={styles.row}>
+              <Text style={styles.textStyle1}>Claimed</Text>
+
+
+            </View>
+            <View style={{ justifyContent: 'flex-start', alignItems: 'flex-start' }}>
+              <Text style={styles.textStyle2} >4 day ago.</Text>
+            </View>
+
+
+          </View>
+          <View style={styles.end}>
+            <Text style={styles.textStyle1}>$0.5</Text>
+          </View>
+        </View>
+
         <View style={styles.subContainer}>
           <View style={styles.topIconLeft}>
             <View style={styles.row}>
